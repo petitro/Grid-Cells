@@ -19,7 +19,7 @@ runs=[1,2,3,4,5]
 
 for j in runs:
     input_file = 'run' + str(j)
-    output_file = 'Eventable/run' + str(j) + 'uniquementPPI.txt'
+    output_file = 'Eventable/run' + str(j) + 'PPIonly.txt'
     df = prep_log('Eventable/'+input_file)
 
     # Ouvrir fichier final pour écriture
