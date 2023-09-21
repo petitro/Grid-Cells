@@ -35,8 +35,9 @@ def split_4d_nifti(nifti_file):
     print("Splitting complete.")
 
 # Usage example
-sub=261
-runs=[1,2,3,4,5]
+sub=261 #number of subject
+runs=[1] #number of runs of the subject
+Path="H:/GridcatTest/Vieux/" #Path to 4D nifti file.gz (Need to adapt the name of nifti_file below)
 for index in runs:
-    nifti_file = "H:/GridcatTest/Vieux/Sub"+str(sub)+"/NII/sub-"+str(sub)+"_ses-01_task-untitled_run-0"+str(index)+"_bold_3DMCTS_SCCTBL_256_sinc_2x1.0_MNI.nii.gz"
+    nifti_file = Path+"Sub"+str(sub)+"/NII/sub-"+str(sub)+"_ses-01_task-untitled_run-0"+str(index)+"_bold_3DMCTS_SCCTBL_256_sinc_2x1.0_MNI.nii.gz"
     split_4d_nifti(nifti_file)
